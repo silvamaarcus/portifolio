@@ -1,3 +1,9 @@
 .bg-footer {
   background-color: #2b071c;
 }
+
+.text-center-mobile {
+  @include responsive(s) {
+    text-align: center;
+  }
+}

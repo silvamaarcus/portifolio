@@ -266,37 +266,20 @@ $gutter: 32px;
 // Bordas
 
 // Borda abaixo do elemento.
-.bb-black {
-  border-bottom: 1px solid $black-light;
+.bb-gray{
+  border-bottom: 1px solid $gray-8;
 }
 // Borda acima do elemento.
-.bt-black {
-  border-top: 1px solid $black-light;
+.bt-gray {
+  border-top: 1px solid $gray-8;
 }
 // Borda a esquerda do elemento.
-.bl-black {
-  border-left: 1px solid $black-light;
+.bl-gray {
+  border-left: 1px solid $gray-8;
 }
 // Borda a direita do elemento.
-.br-black {
-  border-right: 1px solid $black-light;
-}
-
-// Borda MAIS GROSSA abaixo do elemento.
-.bb-gray {
-  border-bottom: 2px solid $black-normal;
-}
-// Borda MAIS GROSSA acima do elemento.
-.bt-gray {
-  border-top: 2px solid $black-normal;
-}
-// Borda MAIS GROSSA a esquerda do elemento.
-.bl-gray {
-  border-left: 2px solid $black-normal;
-}
-// Borda MAIS GROSSA a direita do elemento.
 .br-gray {
-  border-right: 2px solid $black-normal;
+  border-right: 1px solid $gray-8;
 }
 
 // Backgrounds

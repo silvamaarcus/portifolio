@@ -1,7 +1,7 @@
 // Cores do Projeto
 
 // Cores Principais
-$brand-color: #B6364E;
+$brand-color: #b6364e;
 
 // Cores Neutras
 $black-normal: #0f141f;
@@ -22,6 +22,7 @@ $gray-4: #595a5c;
 $gray-5: #717274;
 $gray-6: #888a8c;
 $gray-7: #9ea0a3;
+$gray-8: #979797;
 
 // Cores Auxiliares
 $red-normal: #f03d3d;
@@ -41,7 +42,7 @@ $yellow-light: #ffd76b;
 }
 
 .color-white {
-  color: $white-light;
+  color: $white-normal;
 }
 
 .color-primary {
@@ -51,8 +52,8 @@ $yellow-light: #ffd76b;
 .color-gradient {
   background: linear-gradient(
     224.78deg,
-    #BE3D55 8.12%,
-    #94192F 92.21%
+    #be3d55 8.12%,
+    #94192f 92.21%
   ) !important;
   background-clip: text;
   -webkit-background-clip: text !important;

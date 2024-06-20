@@ -18,7 +18,7 @@ body {
   height: 100vh;
 
   background: linear-gradient(45deg, #150308, #2b071c, #931d34);
-  background-size: 600% 600%;
+  background-size: 700% 700%;
   animation: GradientBackground 10s ease infinite;
 
   @keyframes GradientBackground {
@@ -62,7 +62,7 @@ body {
 svg,
 img {
   width: 100%;
-  //height: auto;
+  // height: auto;
 }
 
 @import "sass/menu";

@@ -32,7 +32,7 @@
     font-weight: 500;
   } @else if $size == h1 and $device == mobile {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 56px;
+    font-size: 40px;
     line-height: 110%;
     font-weight: 500;
   } @else if $size == h1 and $device == smallmobile {
@@ -269,6 +269,7 @@ p {
 }
 
 .p1 {
+  color: #d9d9d9;
   @include typeface-2(p1, desktop);
   @include responsive(s) {
     @include typeface-2(p1, mobile);
@@ -328,7 +329,9 @@ span {
   position: relative;
   display: inline-block;
 
-  color: $brand-color;
+  color: $white-light;
+
+  border-bottom: 4px solid $brand-color;
 }
 
 .letter-h1 {
@@ -350,7 +353,7 @@ strong {
 }
 
 b {
-  color: $gray-2;
+  color: $brand-color;
 }
 
 .text-center {

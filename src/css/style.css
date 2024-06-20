@@ -567,6 +567,23 @@
   }
 }
 
+.icon-skill {
+  max-width: 128px;
+  max-height: 128px;
+  padding: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  background: rgba(23, 23, 23, 0.2);
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 960px) {
+  .icon-skill {
+    max-width: 64px;
+    max-height: 64px;
+  }
+}
+
 .s-0 {
   margin: 0;
   padding: 0;
@@ -1262,7 +1279,7 @@ h1 {
 @media screen and (max-width: 960px) {
   h1 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 56px;
+    font-size: 40px;
     line-height: 110%;
     font-weight: 500;
   }
@@ -1547,7 +1564,7 @@ span {
 @media screen and (max-width: 960px) {
   .letter-h1 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 56px;
+    font-size: 40px;
     line-height: 110%;
     font-weight: 500;
   }

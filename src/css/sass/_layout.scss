@@ -410,3 +410,22 @@ $gutter: 32px;
     background-position: center center;
   }
 }
+
+.icon-skill {
+  max-width: 128px;
+  max-height: 128px;
+
+  padding: 16px;
+
+  @include responsive(s) {
+    max-width: 64px;
+    max-height: 64px;
+  }
+
+  border: 3px solid rgba(255, 255, 255, 0.15);;
+
+  background: rgba(23, 23, 23, 0.2);
+  backdrop-filter: blur(150px);
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

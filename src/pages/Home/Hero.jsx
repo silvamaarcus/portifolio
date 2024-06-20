@@ -3,8 +3,8 @@ import avatar from "../../assets/img/avatar.png";
 const Hero = () => {
   return (
     <>
-      <section className="container py-0 flex-start-row flex-wrap">
-        <div className="grid-7 flex" id="hero-info">
+      <section className="container py-0 mt-5 flex-start-row flex-wrap">
+        <div className="grid-8 flex" id="hero-info">
           <h1>
             Olá! Como vai?
             <br />
@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
           <div className="art-services mt-6"></div>
         </div>
-        <div className="grid-5" id="hero-art">
+        <div className="grid-4" id="hero-art">
           <img src={avatar} />
         </div>
       </section>

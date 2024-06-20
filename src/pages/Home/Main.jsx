@@ -1,8 +1,8 @@
 const Main = () => {
   return (
     <>
-      <main className="container py-0 mt-5">
-        <h1>Projetos</h1>
+      <main className="container py-0 mt-5 bt-gray">
+        <h1 className="mt-5">Projetos</h1>
         <div className="flex flex-wrap mt-6">
           <div className="grid-6">
             <div>
@@ -40,7 +40,6 @@ const Main = () => {
                 </div>
               </div>
             </div>
-
           </div>
           <div className="grid-6">
             <div>
@@ -78,9 +77,7 @@ const Main = () => {
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </main>
     </>

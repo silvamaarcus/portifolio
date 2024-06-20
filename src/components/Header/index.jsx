@@ -6,16 +6,39 @@ const Header = () => {
       <div className="container p-0 mt-4 flex-center">
         <ul className="menu flex-start-row gap-5 py-2">
           <li>
-            <GithubFill strokeWidth={2} size={32} color="white" className="icon"/>
+            <a href="https://github.com/silvamaarcus" target="_blank">
+              <GithubFill
+                strokeWidth={2}
+                size={32}
+                color="white"
+                className="icon"
+              />
+            </a>
           </li>
           <li>
-            <LinkedinBoxFill strokeWidth={2} size={32} color="white" className="icon"/>
+            <a href="https://www.linkedin.com/in/silvamaarcus" target="_blank">
+              <LinkedinBoxFill
+                strokeWidth={2}
+                size={32}
+                color="white"
+                className="icon"
+              />
+            </a>
           </li>
           <li>
-            <WhatsappFill strokeWidth={2} size={32} color="white" className="icon"/>
+            <a href="https://wa.me/5531997003074" target="_blank">
+              <WhatsappFill
+                strokeWidth={2}
+                size={32}
+                color="white"
+                className="icon"
+              />
+            </a>
           </li>
           <li>
-            <File strokeWidth={2} size={32} color="white" className="icon"/>
+            <a href="../../../public/pdf/cv_marcus.pdf" download="CV MARCUS SILVA.pdf">
+              <File strokeWidth={2} size={32} color="white" className="icon" />
+            </a>
           </li>
         </ul>
       </div>

@@ -266,7 +266,7 @@ $gutter: 32px;
 // Bordas
 
 // Borda abaixo do elemento.
-.bb-gray{
+.bb-gray {
   border-bottom: 1px solid $gray-8;
 }
 // Borda acima do elemento.
@@ -353,3 +353,60 @@ $gutter: 32px;
 }
 
 // <===================== FIM DA CONFIGURAÇÃO PADRÃO =====================>
+
+#hero-info {
+  flex-direction: column;
+
+  @include responsive(s) {
+    text-align: center;
+
+    h1 {
+      font-size: 40px !important;
+    }
+  }
+}
+#hero-art {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.art-services {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  height: 150px;
+
+  background-image: url("../assets/img/arrows.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 128px;
+    height: 128px;
+    @include responsive(s) {
+      left: 50%;
+    }
+
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+
+    background-image: url("../assets/svg/figma.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

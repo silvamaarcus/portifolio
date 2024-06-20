@@ -32,7 +32,7 @@ const Footer = () => {
               ></textarea>
             </form>
             <div className="flex-end-row mt-4">
-              <button className="btn_underline uppercase color-gradient bb-gradient">enviar mensagem</button>
+              <button className="btn-underline uppercase color-gradient bb-gradient">enviar mensagem</button>
             </div>
           </div>
         </div>

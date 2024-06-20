@@ -450,7 +450,7 @@
 }
 
 .bg-gray {
-  background-color: #0f141f;
+  background-color: #171717;
 }
 
 .logo {
@@ -511,6 +511,60 @@
   border: 2px solid #b6364e;
   border-radius: 4px;
   background-color: rgba(27, 105, 210, 0.2);
+}
+
+#hero-info {
+  flex-direction: column;
+}
+@media screen and (max-width: 960px) {
+  #hero-info {
+    text-align: center;
+  }
+  #hero-info h1 {
+    font-size: 40px !important;
+  }
+}
+
+#hero-art {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#hero-art img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.art-services {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 150px;
+  background-image: url("../assets/img/arrows.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.art-services::after {
+  content: "";
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  background-image: url("../assets/svg/figma.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 960px) {
+  .art-services::after {
+    left: 50%;
+  }
 }
 
 .s-0 {
@@ -1372,6 +1426,7 @@ p {
 }
 
 .p1 {
+  color: #d9d9d9;
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -1476,7 +1531,8 @@ p {
 span {
   position: relative;
   display: inline-block;
-  color: #b6364e;
+  color: #f7f9fc;
+  border-bottom: 4px solid #b6364e;
 }
 
 .letter-h1 {
@@ -1514,7 +1570,7 @@ strong {
 }
 
 b {
-  color: #2b2b2c;
+  color: #b6364e;
 }
 
 .text-center {
@@ -1694,7 +1750,25 @@ option {
   opacity: 0.7;
 }
 
-.btn_underline {
+.btn-alt {
+  display: inline-block;
+  padding: 8px 24px;
+  color: #f7f9fc;
+  background: #171717;
+  border-radius: 4px;
+  border: 1px solid #333;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-alt:hover {
+  opacity: 0.7;
+}
+
+.btn-underline {
   display: inline-block;
   padding: 8px 24px;
   background: transparent;
@@ -1709,10 +1783,10 @@ option {
   transition: 0.3s ease;
   position: relative;
 }
-.btn_underline:hover {
+.btn-underline:hover {
   opacity: 0.7;
 }
-.btn_underline::after {
+.btn-underline::after {
   content: "";
   position: absolute;
   width: 80%;

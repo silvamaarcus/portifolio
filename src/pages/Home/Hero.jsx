@@ -3,7 +3,7 @@ import avatar from "../../assets/img/avatar.png";
 const Hero = () => {
   return (
     <>
-      <section className="container p-0 flex-start-row flex-wrap">
+      <section className="container py-0 flex-start-row flex-wrap">
         <div className="grid-7 flex" id="hero-info">
           <h1>
             Olá! Como vai?

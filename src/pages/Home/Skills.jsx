@@ -5,13 +5,17 @@ import icon_react from "../../assets/svg/react.svg";
 import icon_tailwind from "../../assets/svg/tailwind.svg";
 import icon_nextjs from "../../assets/svg/nextjs.svg";
 
-
 const Skills = () => {
   return (
     <>
-      <section className="container py-0 mt-5">
+      <section
+        className="container py-0 mt-5"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="2000"
+      >
         <h1>Skills</h1>
-        <div className="mt-5 flex-center gap-4 flex-wrap">
+        <div className="my-5 flex-center gap-4 flex-wrap">
           <img src={icon_html} alt="HTML" className="icon-skill" />
           <img src={icon_js} alt="JS" className="icon-skill" />
           <img src={icon_sass} alt="SASS" className="icon-skill" />

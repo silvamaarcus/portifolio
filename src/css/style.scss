@@ -18,7 +18,7 @@ body {
   height: 100vh;
 
   background: linear-gradient(45deg, #150308, #2b071c, #931d34);
-  background-size: 700% 700%;
+  background-size: 800% 800%;
   animation: GradientBackground 10s ease infinite;
 
   @keyframes GradientBackground {
@@ -38,12 +38,12 @@ body {
   &::-webkit-scrollbar {
     padding-right: 4px;
     width: 10px;
-    background: transparent;
+    background: #150308;
   }
 
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background: $brand-color;
+    background: #931d34;
   }
 }
 

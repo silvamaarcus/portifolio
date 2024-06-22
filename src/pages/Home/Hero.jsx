@@ -1,9 +1,13 @@
-import avatar from "../../assets/img/avatar.png";
+import avatar_image from "../../assets/img/avatar.png";
 
 const Hero = () => {
   return (
     <>
-      <section className="container py-0 mt-5 flex-start-row flex-wrap">
+      <section
+        className="container py-0 mt-5 flex-start-row flex-wrap"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
         <div className="grid-8 flex" id="hero-info">
           <h1>
             Olá! Como vai?
@@ -15,13 +19,20 @@ const Hero = () => {
             a inovações 👋.
           </p>
           <div className="flex-start-row gap-3">
-            <button className="btn">Download CV</button>
-            <button className="btn-alt">Entrar em contato</button>
+            <a
+              href="../../../public/pdf/cv_marcus.pdf"
+              download="CV MARCUS SILVA.pdf"
+            >
+              <button className="btn">Download CV</button>
+            </a>
+            <a href="#footer">
+              <button className="btn-alt">Entrar em contato</button>
+            </a>
           </div>
           <div className="art-services mt-6"></div>
         </div>
         <div className="grid-4" id="hero-art">
-          <img src={avatar} />
+          <img src={avatar_image} />
         </div>
       </section>
     </>

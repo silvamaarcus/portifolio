@@ -3,8 +3,13 @@ import Header from "../Header/index";
 const Footer = () => {
   return (
     <>
-      <section className="bg-footer">
-        <div className="container flex bb-gray px-0 mt-5">
+      <section className="bg-footer" id="footer">
+        <div
+          className="container flex bb-gray px-0 mt-5"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2000"
+        >
           <div className="grid-5 text-center-mobile">
             <h1>Contato</h1>
             <p className="mt-4 color-white">
@@ -32,7 +37,9 @@ const Footer = () => {
               ></textarea>
             </form>
             <div className="flex-end-row mt-4">
-              <button className="btn-underline uppercase color-gradient bb-gradient">enviar mensagem</button>
+              <button className="btn-underline uppercase color-gradient bb-gradient">
+                enviar mensagem
+              </button>
             </div>
           </div>
         </div>

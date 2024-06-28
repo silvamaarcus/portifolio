@@ -1,4 +1,6 @@
 import avatar_image from "../../assets/img/avatar.png";
+import MyCarousel from "../../components/Carousel";
+import Carousel from "../../components/Carousel";
 
 const Hero = () => {
   return (
@@ -29,7 +31,9 @@ const Hero = () => {
               <button className="btn-alt">Entrar em contato</button>
             </a>
           </div>
-          <div className="art-services mt-6"></div>
+          <div className="art-services mt-6">
+            <MyCarousel />
+          </div>
         </div>
         <div className="grid-4" id="hero-art">
           <img src={avatar_image} />

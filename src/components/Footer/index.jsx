@@ -1,6 +1,61 @@
 import Header from "../Header/index";
 
+// Hooks
+import { useState } from "react";
+
 const Footer = () => {
+  const [user, setUser] = useState({
+    Name: "",
+    Email: "",
+    Number: "",
+    Message: "",
+  });
+
+  // Resetar formulario aós requisicao
+  const resetForm = () => {
+    setUser({
+        Name: "",
+        Email: "",
+        Number: "",
+        Message: "",
+    });
+};
+
+  let name, value;
+  const data = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+    setUser({ ...user, [name]: value });
+    console.log(user);
+  };
+
+  const getData = async (e) => {
+    const { Name, Email, Number, Message } = user;
+    e.preventDefault();
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "aplication/json",
+      },
+      body: JSON.stringify({
+        Name,
+        Email,
+        Number,
+        Message,
+      }),
+    };
+    const res = await fetch(
+      "https://silvamarcus-contatos-default-rtdb.firebaseio.com/UserData.json",
+      options
+    );
+    if (res) {
+      alert("Obrigado por entrar em contato!!!");
+      resetForm();  // Zera os inputs após a requisição ser bem-sucedida
+    } else {
+      alert("Que pena! Aconteceu algo de errado...");
+    }
+  };
+
   return (
     <>
       <section className="bg-footer" id="footer">
@@ -19,26 +74,54 @@ const Footer = () => {
           </div>
           <div className="grid-2 disappear"></div>
           <div className="grid-5">
-            <form>
+            <form method="POST">
               <input
                 type="text"
                 placeholder="Nome"
-                className="uppercase semi-bold"
+                className="semi-bold"
+                required
+                name="Name"
+                value={user.Name}
+                onChange={data}
+                autoComplete="off"
               />
               <input
                 type="text"
                 placeholder="E-mail"
-                className="mt-3 uppercase semi-bold"
+                className="mt-3 semi-bold"
+                required
+                name="Email"
+                value={user.Email}
+                onChange={data}
+                autoComplete="off"
+              />
+              <input
+                type="text"
+                placeholder="Telefone (DDD)"
+                className="mt-3 semi-bold"
+                required
+                name="Number"
+                value={user.Number}
+                onChange={data}
+                autoComplete="off"
               />
               <textarea
                 rows="4"
                 placeholder="Mensagem"
-                className="mt-3 uppercase semi-bold"
+                className="mt-3 semi-bold"
+                required
+                name="Message"
+                value={user.Message}
+                onChange={data}
+                autoComplete="off"
               ></textarea>
             </form>
             <div className="flex-end-row mt-4">
-              <button className="btn-underline uppercase color-gradient bb-gradient">
-                enviar mensagem
+              <button
+                className="btn-underline uppercase color-gradient bb-gradient"
+                onClick={getData}
+              >
+                Enviar mensagem
               </button>
             </div>
           </div>

@@ -287,41 +287,6 @@ $gutter: 32px;
   background-color: $black-normal;
 }
 
-// Tamanhos para logos
-.logo {
-  max-width: 64px;
-  min-width: 48px;
-}
-
-// Definições para fotos de profile (avatar).
-.profile {
-  width: 48px;
-  height: 48px;
-
-  border-radius: 50%;
-}
-.profile-big {
-  width: 128px;
-  height: 128px;
-
-  border-radius: 50%;
-}
-.profile-img {
-  border-radius: 50%;
-  border: 2px solid $brand-color;
-}
-.card {
-  border: 1px solid $black-light;
-  border-radius: 4px;
-  background-color: rgba(15, 20, 31, 0);
-
-  transition: 0.2s ease;
-
-  &:hover {
-    background-color: rgba(15, 20, 31, 0.2);
-  }
-}
-
 .bg-section {
   background-color: rgba(15, 20, 31, 0.5);
 }
@@ -390,25 +355,25 @@ $gutter: 32px;
   background-position: center;
   background-repeat: no-repeat;
 
-  &::after {
-    content: "";
-    position: absolute;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
 
-    width: 128px;
-    height: 128px;
-    @include responsive(s) {
-      left: 50%;
-    }
+  //   width: 128px;
+  //   height: 128px;
+  //   @include responsive(s) {
+  //     left: 50%;
+  //   }
 
-    top: 50%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+  //   top: 50%;
+  //   left: 45%;
+  //   transform: translate(-50%, -50%);
 
-    background-image: url("../assets/svg/figma.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+  //   background-image: url("../assets/svg/figma.svg");
+  //   background-size: 100%;
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  // }
 }
 
 .icon-skill {
@@ -423,4 +388,53 @@ $gutter: 32px;
   backdrop-filter: blur(150px);
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+
+  img {
+    max-height: 400px;
+  }
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  height: 101%;
+  top: -18%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+.overlay.visible {
+  opacity: 1;
+}
+
+// Links externos Mobile
+.card-links-mobile {
+  display: none;
+
+  @include responsive(s) {
+    display: flex;
+  }
+}
+
+.icon-hero {
+  max-width: 128px;
+  max-height: 128px;
 }

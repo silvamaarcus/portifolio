@@ -4,12 +4,13 @@ import icon_sass from "../../assets/svg/sass.svg";
 import icon_react from "../../assets/svg/react.svg";
 import icon_tailwind from "../../assets/svg/tailwind.svg";
 import icon_nextjs from "../../assets/svg/nextjs.svg";
+import { useEffect } from "react";
 
 const Skills = () => {
   return (
     <>
       <section
-        className="container py-0 mt-5"
+        className="container py-0 mt-6"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
         data-aos-duration="2000"

@@ -1,10 +1,13 @@
+import { useState } from "react";
+
 import {
   Cross,
   GithubFill,
   LinkedinBoxFill,
   ThreeLineHorizontal,
 } from "akar-icons";
-import { useState } from "react";
+
+import ProfileImg from "/img/profile.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +21,7 @@ const Header = () => {
       <header className="bg-background/10 fixed top-0 right-0 left-0 z-50 flex flex-wrap items-center justify-around gap-4 py-6 backdrop-blur-md">
         <a href="/" className="hidden items-center gap-4 md:flex">
           <img
-            src="/img/profile.png"
+            src={ProfileImg}
             alt="Marcus Silva"
             className="hover:border-secondary size-16 rounded-full border-4 border-white object-cover"
           />

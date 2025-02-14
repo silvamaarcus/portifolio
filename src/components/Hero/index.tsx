@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="custom-containe relative flex h-[600px] flex-col items-center justify-center md:min-h-screen">
+      <section className="custom-containe relative flex h-[600px] flex-col items-center justify-center md:min-h-screen" id="home">
         <div className="flex h-full flex-col items-center justify-center">
           <h1 className="text-center text-3xl font-bold md:text-8xl">
             Prazer em te conhecer! <br /> Eu sou{" "}

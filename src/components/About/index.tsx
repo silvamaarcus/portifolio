@@ -1,8 +1,10 @@
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
 const About = () => {
   return (
     <>
-      <section className="custom-container pt-32" id="about">
-        <div className="flex flex-col items-center justify-center">
+      <section className="custom-container pt-32 overflow-hidden" id="about">
+        <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
           <div className="relative">
             <h1 className="text-4xl font-bold">Sobre mim</h1>
             <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>
@@ -16,7 +18,7 @@ const About = () => {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-12">
-          <div className="col-span-12 sm:col-span-6">
+          <div className="animate__animated animate__fadeInLeft animate__delay-30000 col-span-12 sm:col-span-6">
             <h1 className="mb-9 text-2xl font-bold md:text-start">
               Venha me conhecer
             </h1>
@@ -59,7 +61,7 @@ const About = () => {
             </span>
           </div>
 
-          <div className="col-span-12 sm:col-span-6">
+          <div className="animate__animated animate__fadeInRight animate__delay-30000 col-span-12 sm:col-span-6">
             <h1 className="mb-9 text-center text-2xl font-bold md:text-start">
               Minhas habilidades
             </h1>
@@ -127,6 +129,14 @@ const About = () => {
               <img
                 src="https://img.shields.io/badge/sass-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white"
                 alt="Sass"
+              />
+            </div>
+            {/* Animation */}
+            <div>
+              <DotLottieReact
+                src="https://lottie.host/0e89894f-890a-4c9e-9819-60aa657c0484/Gy42xtwKLH.lottie"
+                loop
+                autoplay
               />
             </div>
           </div>

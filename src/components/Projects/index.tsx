@@ -6,8 +6,8 @@ import Project_3_img from "/img/project_3.png";
 const Projects = () => {
   return (
     <>
-      <section className="custom-container pt-32" id="projects">
-        <div className="flex flex-col items-center justify-center">
+      <section className="custom-container pt-32 overflow-hidden" id="projects">
+        <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
           <div className="relative">
             <h1 className="text-4xl font-bold">Projetos</h1>
             <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>
@@ -20,7 +20,7 @@ const Projects = () => {
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-12">
           {/* Project 1 */}
-          <div className="col-span-12 sm:col-span-4">
+          <div className="animate__animated animate__fadeInDown animate__delay-20000 col-span-12 sm:col-span-4">
             <a href="https://forest-page-pi.vercel.app/" target="_blank">
               <div className="border-soft-black group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
                 <img
@@ -56,7 +56,7 @@ const Projects = () => {
             </a>
           </div>
           {/* Project 2 */}
-          <div className="col-span-12 sm:col-span-4">
+          <div className="animate__animated animate__fadeInUp animate__delay-25000 col-span-12 sm:col-span-4">
             <a href="https://wedding-ms-psi.vercel.app/" target="_blank">
               <div className="border-soft-black group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
                 <img
@@ -92,7 +92,7 @@ const Projects = () => {
             </a>
           </div>
           {/* Project 3 */}
-          <div className="col-span-12 sm:col-span-4">
+          <div className="animate__animated animate__fadeInDown animate__delay-30000 col-span-12 sm:col-span-4">
             <a href="https://portifolio-bikcraft.vercel.app/" target="_blank">
               <div className="border-soft-black group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
                 <img

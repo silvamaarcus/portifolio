@@ -1,5 +1,6 @@
-import { ArrowDown, WhatsappFill } from "akar-icons";
+import { WhatsappFill } from "akar-icons";
 import Button from "../ui/Button";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Hero = () => {
   const downloadResume = () => {
@@ -12,16 +13,16 @@ const Hero = () => {
         className="custom-containe relative flex h-[600px] flex-col items-center justify-center md:min-h-screen"
         id="home"
       >
-        <div className="flex h-full flex-col items-center justify-center">
-          <h1 className="text-center text-3xl font-bold md:text-8xl">
+        <div className="flex h-full flex-col items-center justify-center overflow-hidden">
+          <h1 className="animate__animated animate__backInRight animate__delay-30000s text-center text-3xl font-bold md:text-8xl">
             Prazer em te conhecer! <br /> Eu sou{" "}
-            <span className="color-gradient">Marcus Silva</span>.
+            <span className="color-gradient">Marcus Silva.</span>
           </h1>
-          <p className="my-10 w-[70%] text-center md:text-2xl">
+          <p className="animate__animated animate__backInLeft animate__delay-10000s my-10 w-[70%] text-center md:text-2xl">
             Um desenvolvedor front-end apaixonado por criar interfaces e dar
             vida a inovações 👋.
           </p>
-          <div className="flex items-center justify-center gap-4 sm:justify-start">
+          <div className="animate__animated animate__backInLeft animate__delay-30000s flex items-center justify-center gap-4 sm:justify-start">
             <Button onClick={downloadResume}>Download CV</Button>
             <a
               href="https://wa.me/5531997003074"
@@ -37,9 +38,14 @@ const Hero = () => {
           onClick={() =>
             window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
           }
-          className="bg-secondary absolute bottom-8 mb-4 animate-bounce cursor-pointer rounded-full p-3 text-black hover:opacity-70"
+          className="absolute bottom-8 cursor-pointer"
         >
-          <ArrowDown strokeWidth={2} size={24} />
+          <DotLottieReact
+            src="https://lottie.host/ba453da1-161f-479f-aa28-9b8961c54f6a/OZI744whN3.lottie"
+            loop
+            autoplay
+            className="w-40"
+          />
         </button>
       </section>
     </>

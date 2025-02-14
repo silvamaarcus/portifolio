@@ -3,8 +3,8 @@ import Button from "../ui/Button";
 const Contact = () => {
   return (
     <>
-      <section className="custom-container pt-32" id="contact">
-        <div className="flex flex-col items-center justify-center">
+      <section className="custom-container pt-32 overflow-hidden" id="contact">
+        <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
           <div className="relative">
             <h1 className="text-4xl font-bold">Contato</h1>
             <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>

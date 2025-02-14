@@ -3,18 +3,23 @@ import Project_1_img from "/img/project_1.png";
 import Project_2_img from "/img/project_2.png";
 import Project_3_img from "/img/project_3.png";
 
+import { useTranslation } from "react-i18next";
+
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <section className="custom-container pt-32 overflow-hidden" id="projects">
+      <section className="custom-container overflow-hidden pt-32" id="projects">
         <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
           <div className="relative">
-            <h1 className="text-4xl font-bold">Projetos</h1>
+            <h1 className="text-4xl font-bold">
+              {t("sectionProjects.title")}
+            </h1>
             <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>
           </div>
           <p className="my-12 text-center md:w-[70%] md:text-2xl">
-            Aqui você encontrará alguns dos projetos pessoais e de clientes que
-            criei, com cada projeto contendo seu próprio estudo de caso.
+            {t("sectionProjects.description")}
           </p>
         </div>
 

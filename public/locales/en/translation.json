@@ -1,0 +1,45 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "projects": "Projects"
+  },
+  "hero": {
+    "title": "Nice to meet you!<br/>I am <span>{{name}}</span>",
+    "subtitle": "A front-end developer passionate about creating interfaces and bringing innovations to life 👋."
+  },
+  "buttons": {
+    "download": "Download CV",
+    "contact": "Contact",
+    "send": "Send"
+  },
+  "sectionAbout": {
+    "title": "About Me",
+    "description": "Here you will find detailed information about who I am and how I can assist you with my current programming and technology skills.",
+    "aboutMe": "Come meet me",
+    "mySkills": "My skills",
+    "info": {
+      "p_1": "I am a front-end developer, creating and managing interfaces for websites and web applications that contribute to the overall success of the product. Check out my work in the Projects section.",
+      "p_2": "I also enjoy sharing content related to what I have learned over the years in web development so I can connect with other people in the developer community. Feel free to connect or follow me on my <github>GitHub</github> and <linkedin>LinkedIn</linkedin>.",
+      "p_3": "I am open to job opportunities where I can contribute, learn, and grow. If you have a good opportunity that matches my skills and experience, don't hesitate to reach out to me."
+    }
+  },
+  "sectionProjects": {
+    "title": "Projects",
+    "description": "Here you will find some of the personal and client projects I have created, with each project featuring its own case study."
+  },
+  "sectionContact": {
+    "title": "Contact",
+    "description": "Feel free to contact me by sending the form below, and I will get back to you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    }
+  },
+  "footer": {
+    "info": "A front-end developer passionate about creating interfaces and bringing innovations to life 👋.",
+    "copy": "© Copyright 2025. Developed by"
+  }
+}

@@ -1,29 +1,61 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
+import { Trans, useTranslation } from "react-i18next";
+
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <section className="custom-container pt-32 overflow-hidden" id="about">
+      <section className="custom-container overflow-hidden pt-32" id="about">
         <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
           <div className="relative">
-            <h1 className="text-4xl font-bold">Sobre mim</h1>
+            <h1 className="text-4xl font-bold">{t("sectionAbout.title")}</h1>
             <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>
           </div>
 
           <p className="my-12 text-center md:w-[70%] md:text-2xl">
-            Aqui você encontrará mais informações sobre mim, o que faço e minhas
-            habilidades atuais, principalmente em termos de programação e
-            tecnologia.
+            {t("sectionAbout.description")}
           </p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-12">
           <div className="animate__animated animate__fadeInLeft animate__delay-30000 col-span-12 sm:col-span-6">
             <h1 className="mb-9 text-2xl font-bold md:text-start">
-              Venha me conhecer
+              {t("sectionAbout.aboutMe")}
             </h1>
             <span className="space-y-4 text-xl">
+              <p>{t("sectionAbout.info.p_1")}</p>
+
               <p>
+                <Trans
+                  i18nKey="sectionAbout.info.p_2"
+                  components={{
+                    github: (
+                      <a
+                        href="https://github.com/silvamaarcus"
+                        target="_blank"
+                        className="text-secondary font-bold hover:underline"
+                      >
+                        GitHub
+                      </a>
+                    ),
+                    linkedin: (
+                      <a
+                        href="https://www.linkedin.com/in/silvamaarcus/"
+                        target="_blank"
+                        className="text-secondary font-bold hover:underline"
+                      >
+                        Linkedin
+                      </a>
+                    ),
+                  }}
+                />
+              </p>
+
+              <p>{t("sectionAbout.info.p_3")}</p>
+
+              {/* <p>
                 Sou um desenvolvedor web focado em front-end, construindo e
                 gerenciando o front-end de sites e aplicativos da web que levam
                 ao sucesso do produto geral. Confira alguns dos meus trabalhos
@@ -57,13 +89,13 @@ const About = () => {
                 contribuir, aprender e crescer. Se você tiver uma boa
                 oportunidade que corresponda às minhas habilidades e
                 experiência, não hesite em entrar em contato comigo.
-              </p>
+              </p> */}
             </span>
           </div>
 
           <div className="animate__animated animate__fadeInRight animate__delay-30000 col-span-12 sm:col-span-6">
             <h1 className="mb-9 text-center text-2xl font-bold md:text-start">
-              Minhas habilidades
+              {t("sectionAbout.mySkills")}
             </h1>
             <div className="flex flex-wrap gap-4">
               <img

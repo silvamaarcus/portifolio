@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import {
   Cross,
@@ -15,6 +16,8 @@ const Header = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
+  const { t } = useTranslation();
 
   return (
     <section className="custom-container">
@@ -48,25 +51,25 @@ const Header = () => {
             href="/"
             className="hover:border-primary border-b-4 border-transparent text-xl transition-colors duration-500"
           >
-            Home
+            {t("navigation.home")}
           </a>
           <a
             href="#about"
             className="hover:border-primary border-b-4 border-transparent text-xl transition-colors duration-500"
           >
-            Sobre
+            {t("navigation.about")}
           </a>
           <a
             href="#projects"
             className="hover:border-primary border-b-4 border-transparent text-xl transition-colors duration-500"
           >
-            Projetos
+            {t("navigation.projects")}
           </a>
           <a
             href="#contact"
             className="hover:border-primary border-b-4 border-transparent text-xl transition-colors duration-500"
           >
-            Contato
+            {t("navigation.contact")}
           </a>
         </nav>
 
@@ -96,16 +99,18 @@ const Header = () => {
           } bg-background/10 fixed top-20 right-0 left-0 z-50 mx-2 flex-col rounded-xl backdrop-blur-md md:hidden`}
         >
           <li className="border-background border-b bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
-            <a href="/">Home</a>
+            <a href="/">{t("navigation.home")}</a>
           </li>
           <li className="border-background border-b bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
-            <a href="#about">Sobre</a>
+            <a href="#about">{t("navigation.about")}</a>
           </li>
           <li className="border-background border-b bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
-            <a href="#projects">Projetos</a>
+            <a href="#projects">{t("navigation.projects")}</a>
           </li>
           <li className="bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
-            <a href="#contact">Contato</a>
+            <a href="#contact">
+              {t("navigation.contact")}
+            </a>
           </li>
         </ul>
       </nav>

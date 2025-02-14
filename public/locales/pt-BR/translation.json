@@ -1,0 +1,45 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Sobre",
+    "contact": "Contato",
+    "projects": "Projetos"
+  },
+  "hero": {
+    "title": "Prazer em te conhecer!<br/>Eu sou <span>{{name}}</span>",
+    "subtitle": "Um desenvolvedor front-end apaixonado por criar interfaces e dar vida a inovações 👋."
+  },
+  "buttons": {
+    "download": "Download CV",
+    "contact": "Contato",
+    "send": "Enviar"
+  },
+  "sectionAbout": {
+    "title": "Sobre mim",
+    "description": "Aqui você encontrará informações detalhadas sobre quem eu sou e como posso te ajudar com  minhas habilidades atuais em programação e tecnologia.",
+    "aboutMe": "Venha me conhecer",
+    "mySkills": "Minhas habilidades",
+    "info": {
+      "p_1": "Sou um desenvolvedor front-end, criando e gerenciando interfaces de sites e aplicativos web que contribuem para o sucesso do produto final. Confira meus trabalhos na seção Projetos.",
+      "p_2": "Também gosto de compartilhar conteúdo relacionado ao que aprendi ao longo dos anos em desenvolvimento web para que possa me conectar com outras pessoas da comunidade de desenvolvedores. Sinta-se à vontade para se conectar ou me seguir no meu <github>GitHub</github> e no <linkedin>Linkedin</linkedin>.",
+      "p_3": "Estou aberto a oportunidades de emprego nas quais posso contribuir, aprender e crescer. Se você tiver uma boa oportunidade que corresponda às minhas habilidades e experiência, não hesite em entrar em contato comigo."
+    }
+  },
+  "sectionProjects": {
+    "title": "Projetos",
+    "description": "Aqui você encontrará alguns dos projetos pessoais e de clientes que criei, com cada projeto contendo seu próprio estudo de caso."
+  },
+  "sectionContact": {
+    "title": "Contatos",
+    "description": "Sinta-se à vontade para entrar em contato comigo enviando o formulário abaixo e entrarei em contato com você o mais breve possível.",
+    "form": {
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Mensagem"
+    }
+  },
+  "footer": {
+    "info": "Um desenvolvedor front-end apaixonado por criar interfaces e dar vida a inovações 👋.",
+    "copy": "© Copyright 2025. Desenvolvido por"
+  }
+}

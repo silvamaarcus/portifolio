@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  color: #fff;
+  background-color: var(--color-background);
+  font-family: var(--font-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --color-primary: #a277ff;
+  --color-secondary: #61ffca;
+  --color-background: #15141b;
+  --color-soft-black: #242424;
+  --color-soft-white: #d9d9d9;
+
+  --font-primary: "Space Grotesk", serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+body::-webkit-scrollbar {
+  padding-right: 4px;
+  width: 0.5rem;
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--color-primary);
+}
+
+.custom-container {
+  @apply mx-auto max-w-[1440px] px-4 md:px-8 lg:px-16;
+}
+
+.invisble-grid {
+  @apply hidden sm:block;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.444px;
+  cursor: pointer;
+}
+.logo:hover {
+  border-bottom: 1px solid var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+p {
+  color: var(--color-soft-white);
+}

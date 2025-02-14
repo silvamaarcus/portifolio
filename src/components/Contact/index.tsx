@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 const Contact = () => {
   return (
     <>
-      <section className="custom-container py-12" id="contact">
+      <section className="custom-container pt-32" id="contact">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold">Contato</h1>
           <p className="my-9 text-center md:w-[70%] md:text-2xl">

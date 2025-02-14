@@ -6,7 +6,7 @@ import Project_3_img from "/img/project_3.png";
 const Projects = () => {
   return (
     <>
-      <section className="custom-container py-12" id="projects">
+      <section className="custom-container pt-32" id="projects">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold">Projetos</h1>
           <p className="my-9 text-center md:w-[70%] md:text-2xl">

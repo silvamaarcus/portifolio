@@ -22,7 +22,7 @@ function App() {
       </div>
       <Header />
       <Hero />
-      <div className="bg-background">
+      <div className="bg-background space-y-24">
         <About />
         <Projects />
         <Contact />

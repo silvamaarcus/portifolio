@@ -3,7 +3,7 @@ import { GithubFill, LinkedinBoxFill } from "akar-icons";
 const Footer = () => {
   return (
     <>
-      <section className="custom-container border-soft-black mt-12 border-t-2 py-12">
+      <section className="custom-container border-soft-black mt-12 border-t-2 pt-32">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-12">
           <div className="col-span-12 sm:col-span-6">
             <h1 className="mb-9 text-2xl font-bold md:text-start">
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <div className="custom-container border-soft-black mt-12 border-t-2 py-12">
+      <div className="custom-container border-soft-black mt-12 border-t-2">
         <p className="text-center">
           © Copyright 2025. Desenvolvido por{" "}
           <a

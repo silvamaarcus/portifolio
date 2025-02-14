@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <div className="custom-container border-soft-black mt-12 border-t-2">
+      <div className="custom-container border-soft-black border-t-2 py-10">
         <p className="text-center">
           © Copyright 2025. Desenvolvido por{" "}
           <a

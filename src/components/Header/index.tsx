@@ -15,16 +15,14 @@ const Header = () => {
 
   return (
     <section className="custom-container">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/10 backdrop-blur-md flex flex-wrap items-center justify-between gap-4 px-4 py-6">
-        <div className="hidden items-center gap-4 md:flex">
+      <header className="bg-background/10 fixed top-0 right-0 left-0 z-50 flex flex-wrap items-center justify-around gap-4 py-6 backdrop-blur-md">
+        <a href="/" className="hidden items-center gap-4 md:flex">
           <img
-            src="https://i.postimg.cc/TwY74D31/profile-pic-8.png"
-            alt=""
-            className="size-12"
+            src="/img/profile.png"
+            alt="Marcus Silva"
+            className="hover:border-secondary size-16 rounded-full border-4 border-white object-cover"
           />
-
-          <h1 className="logo hidden md:block">silvamaarcus</h1>
-        </div>
+        </a>
 
         {/* Menu Mobile */}
         <div className="flex items-center md:hidden">
@@ -92,7 +90,7 @@ const Header = () => {
         <ul
           className={`${
             isOpen ? "flex" : "hidden"
-          } bg-background/10 backdrop-blur-md fixed top-20 right-0 left-0 z-50 mx-2 flex-col rounded-xl md:hidden`}
+          } bg-background/10 fixed top-20 right-0 left-0 z-50 mx-2 flex-col rounded-xl backdrop-blur-md md:hidden`}
         >
           <li className="border-background border-b bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
             <a href="/">Home</a>

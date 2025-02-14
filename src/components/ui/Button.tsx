@@ -15,8 +15,8 @@ const Button = ({
     <button
       className={`${className} bg-primary cursor-pointer rounded-md px-4 py-2 text-white hover:opacity-80 ${
         variant === "primary"
-          ? "bg-primary transition-all duration-300"
-          : "border-primary border-2 bg-transparent"
+          ? "bg-gradient-primary transition-all duration-300"
+          : "border-gradient-primary border-2 bg-transparent"
       }`}
       onClick={onClick}
     >

@@ -18,6 +18,12 @@
   --color-soft-black: #242424;
   --color-soft-white: #d9d9d9;
 
+  --color-gradient-primary: linear-gradient(
+    200deg,
+    #c4a7ff 8%,
+    #a277ff 92%
+  );
+
   --font-primary: "Space Grotesk", serif;
 }
 
@@ -43,19 +49,13 @@ body::-webkit-scrollbar-thumb {
   @apply hidden sm:block;
 }
 
-.logo {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: -0.444px;
-  cursor: pointer;
-}
-.logo:hover {
-  border-bottom: 1px solid var(--color-primary);
-  transition: all 0.3s ease-in-out;
-}
-
 p {
   color: var(--color-soft-white);
+}
+
+.color-gradient {
+  background: var(--color-gradient-primary) !important;
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }

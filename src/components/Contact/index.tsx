@@ -5,8 +5,11 @@ const Contact = () => {
     <>
       <section className="custom-container pt-32" id="contact">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-4xl font-bold">Contato</h1>
-          <p className="my-9 text-center md:w-[70%] md:text-2xl">
+          <div className="relative">
+            <h1 className="text-4xl font-bold">Contato</h1>
+            <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>
+          </div>
+          <p className="my-12 text-center md:w-[70%] md:text-2xl">
             Sinta-se à vontade para entrar em contato comigo enviando o
             formulário abaixo e entrarei em contato com você o mais breve
             possível.

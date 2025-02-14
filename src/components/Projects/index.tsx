@@ -8,8 +8,11 @@ const Projects = () => {
     <>
       <section className="custom-container pt-32" id="projects">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-4xl font-bold">Projetos</h1>
-          <p className="my-9 text-center md:w-[70%] md:text-2xl">
+          <div className="relative">
+            <h1 className="text-4xl font-bold">Projetos</h1>
+            <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>
+          </div>
+          <p className="my-12 text-center md:w-[70%] md:text-2xl">
             Aqui você encontrará alguns dos projetos pessoais e de clientes que
             criei, com cada projeto contendo seu próprio estudo de caso.
           </p>
@@ -19,7 +22,7 @@ const Projects = () => {
           {/* Project 1 */}
           <div className="col-span-12 sm:col-span-4">
             <a href="https://forest-page-pi.vercel.app/" target="_blank">
-              <div className="border-soft-black group hover:border-primary relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
+              <div className="border-soft-black group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
                 <img
                   src={Project_1_img}
                   alt="Forest"
@@ -47,7 +50,7 @@ const Projects = () => {
                     />
                   </div>
 
-                  <p className="text-lg">2025</p>
+                  <p className="color-gradient text-lg">2025</p>
                 </div>
               </div>
             </a>
@@ -55,7 +58,7 @@ const Projects = () => {
           {/* Project 2 */}
           <div className="col-span-12 sm:col-span-4">
             <a href="https://wedding-ms-psi.vercel.app/" target="_blank">
-              <div className="border-soft-black group hover:border-primary relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
+              <div className="border-soft-black group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
                 <img
                   src={Project_2_img}
                   alt="Site de Casamento"
@@ -83,7 +86,7 @@ const Projects = () => {
                     />
                   </div>
 
-                  <p className="text-lg">2024</p>
+                  <p className="color-gradient text-lg">2024</p>
                 </div>
               </div>
             </a>
@@ -91,7 +94,7 @@ const Projects = () => {
           {/* Project 3 */}
           <div className="col-span-12 sm:col-span-4">
             <a href="https://portifolio-bikcraft.vercel.app/" target="_blank">
-              <div className="border-soft-black group hover:border-primary relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
+              <div className="border-soft-black group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
                 <img
                   src={Project_3_img}
                   alt="Bikcraft"
@@ -115,7 +118,7 @@ const Projects = () => {
                     />
                   </div>
 
-                  <p className="text-lg">2023</p>
+                  <p className="color-gradient text-lg">2023</p>
                 </div>
               </div>
             </a>

@@ -3,8 +3,12 @@ const About = () => {
     <>
       <section className="custom-container pt-32" id="about">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-4xl font-bold">Sobre mim</h1>
-          <p className="my-9 text-center md:w-[70%] md:text-2xl">
+          <div className="relative">
+            <h1 className="text-4xl font-bold">Sobre mim</h1>
+            <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>
+          </div>
+
+          <p className="my-12 text-center md:w-[70%] md:text-2xl">
             Aqui você encontrará mais informações sobre mim, o que faço e minhas
             habilidades atuais, principalmente em termos de programação e
             tecnologia.

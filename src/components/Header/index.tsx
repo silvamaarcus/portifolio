@@ -104,18 +104,26 @@ const Header = () => {
         <ul
           className={`${
             isOpen ? "flex" : "hidden"
-          } bg-background/10 fixed top-20 right-0 left-0 z-50 flex-col backdrop-blur-md md:hidden`}
+          } ${theme === "dark" ? "bg-background/10" : "bg-soft-white/10"} fixed top-20 right-0 left-0 z-50 flex-col backdrop-blur-md md:hidden`}
         >
-          <li className="border-background border-b bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
+          <li
+            className={`border-b p-4 ${theme === "dark" ? "border-background hover:bg-white/10" : "border-soft-white hover:bg-black/10"} text-xl backdrop-blur-md transition-all duration-500 hover:pl-6`}
+          >
             <a href="/">{t("navigation.home")}</a>
           </li>
-          <li className="border-background border-b bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
+          <li
+            className={`border-b p-4 ${theme === "dark" ? "border-background hover:bg-white/10" : "border-soft-white hover:bg-black/10"} text-xl backdrop-blur-md transition-all duration-500 hover:pl-6`}
+          >
             <a href="#about">{t("navigation.about")}</a>
           </li>
-          <li className="border-background border-b bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
+          <li
+            className={`border-b p-4 ${theme === "dark" ? "border-background hover:bg-white/10" : "border-soft-white hover:bg-black/10"} text-xl backdrop-blur-md transition-all duration-500 hover:pl-6`}
+          >
             <a href="#projects">{t("navigation.projects")}</a>
           </li>
-          <li className="bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
+          <li
+            className={`border-b p-4 ${theme === "dark" ? "border-background hover:bg-white/10" : "border-soft-white hover:bg-black/10"} text-xl backdrop-blur-md transition-all duration-500 hover:pl-6`}
+          >
             <a href="#contact">{t("navigation.contact")}</a>
           </li>
         </ul>

@@ -5,6 +5,8 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   variant?: "primary" | "secondary";
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 }
 
 const Button = ({
@@ -12,6 +14,8 @@ const Button = ({
   className,
   onClick,
   variant = "primary",
+  type = "button",
+  disabled = false,
 }: ButtonProps) => {
   const theme = useThemeSwitcher((state) => state.theme);
 
@@ -23,6 +27,8 @@ const Button = ({
           : "border-gradient-primary border-2 bg-transparent"
       }`}
       onClick={onClick}
+      type={type}
+      disabled={disabled}
     >
       {children}
     </button>

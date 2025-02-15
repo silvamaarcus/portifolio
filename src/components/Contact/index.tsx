@@ -1,8 +1,8 @@
-import Button from "../ui/Button";
 
 import { useTranslation } from "react-i18next";
 
 import { useThemeSwitcher } from "../../stores/useThemeSwitcher";
+import FormContact from "../ui/Form";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -24,41 +24,8 @@ const Contact = () => {
             {t("sectionContact.description")}
           </p>
 
-          <form
-            className={`mt-10 flex w-full flex-col gap-4 rounded-md p-10 md:w-3/4 ${theme === "dark" ? "bg-soft-black" : "bg-soft-white"}`}
-          >
-            <div className="flex flex-col gap-2">
-              <label htmlFor="name" className="text-lg">
-                {t("sectionContact.form.name")}
-              </label>
-              <input
-                type="text"
-                className={`w-full rounded-md border-0 p-2 outline-none ${theme === "dark" ? "bg-background" : "bg-white"}`}
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="text-lg">
-                {t("sectionContact.form.email")}
-              </label>
-              <input
-                type="text"
-                className={`w-full rounded-md border-0 p-2 outline-none ${theme === "dark" ? "bg-background" : "bg-white"}`}
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <label htmlFor="name" className="text-lg">
-                {t("sectionContact.form.message")}
-              </label>
-              <textarea
-                name="message"
-                rows={5}
-                className={`w-full rounded-md border-0 p-2 outline-none ${theme === "dark" ? "bg-background" : "bg-white"}`}
-              ></textarea>
-            </div>
-            <div className="flex justify-end">
-              <Button>{t("buttons.send")}</Button>
-            </div>
-          </form>
+          <FormContact />
+
         </div>
       </section>
     </>

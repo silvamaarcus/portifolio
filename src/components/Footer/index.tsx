@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </section>
       <div className={`custom-container border-soft-black border-t-2 py-10 ${theme === "dark" ? "text-soft-white border-soft-black" : "text-background border-soft-white"}`}>
-        <p className="mx-auto w-3/4 text-center">
+        <p className="mx-auto w-3/4 text-center mb-12 md:mb-0 md:text-start md:mx-0">
           {t("footer.copy")}{" "}
           <a
             href="https://github.com/silvamaarcus"

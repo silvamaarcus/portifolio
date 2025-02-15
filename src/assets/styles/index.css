@@ -24,7 +24,6 @@
   --font-primary: "Space Grotesk", serif;
 }
 
-
 body {
   width: 100%;
   min-height: 100vh;
@@ -46,9 +45,6 @@ body::-webkit-scrollbar-thumb {
 .invisble-grid {
   @apply hidden sm:block;
 }
-
-
-
 
 .color-gradient {
   background: var(--color-gradient-primary) !important;

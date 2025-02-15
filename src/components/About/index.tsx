@@ -15,7 +15,11 @@ const About = () => {
         className={`custom-container overflow-hidden pt-32 ${theme === "dark" ? "text-soft-white" : "text-background"}`}
         id="about"
       >
-        <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
+        <div
+          className="flex flex-col items-center justify-center"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <div className="relative">
             <h1
               className={`text-4xl font-bold ${theme === "dark" ? "text-white" : ""}`}
@@ -31,7 +35,11 @@ const About = () => {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-12">
-          <div className="animate__animated animate__fadeInLeft animate__delay-30000 col-span-12 sm:col-span-6">
+          <div
+            className="col-span-12 sm:col-span-6"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <h1
               className={`mb-9 text-2xl font-bold md:text-start ${theme === "dark" ? "text-white" : ""}`}
             >
@@ -70,7 +78,11 @@ const About = () => {
             </span>
           </div>
 
-          <div className="animate__animated animate__fadeInRight animate__delay-30000 col-span-12 sm:col-span-6">
+          <div
+            className="col-span-12 sm:col-span-6"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <h1
               className={`mb-9 text-2xl font-bold md:text-start ${theme === "dark" ? "text-white" : ""}`}
             >

@@ -1,6 +1,5 @@
 // CSS
 import "./assets/styles/animation.css";
-import "animate.css"; // Texts animations
 
 // Components
 import Header from "./components/Header";
@@ -12,7 +11,13 @@ import Footer from "./components/Footer";
 import { ThemeSwitcher } from "./components/ui/ThemeSwitcher";
 import { LanguageSwitcher } from "./components/ui/LanguageSwitcher";
 
+// Stores
 import { useThemeSwitcher } from "./stores/useThemeSwitcher";
+
+// Biblioteca de animação para Scroll.
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function App() {
   const theme = useThemeSwitcher((state) => state.theme);
@@ -20,7 +25,9 @@ function App() {
   return (
     <section className="relative">
       <div>
-        <div className={`background -z-10 *:-z-20 ${theme === "dark" ? "bg-background" : "bg-soft-white"}`}>
+        <div
+          className={`background -z-10 *:-z-20 ${theme === "dark" ? "bg-background" : "bg-soft-white"}`}
+        >
           <span className="ball"></span>
           <span className="ball"></span>
           <span className="ball"></span>

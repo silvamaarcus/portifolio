@@ -18,7 +18,11 @@ const Projects = () => {
         className={`custom-container overflow-hidden pt-32 ${theme === "dark" ? "text-soft-white" : "text-background"}`}
         id="projects"
       >
-        <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
+        <div
+          className="flex flex-col items-center justify-center"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <div className="relative">
             <h1
               className={`text-4xl font-bold ${theme === "dark" ? "text-white" : ""}`}
@@ -34,7 +38,11 @@ const Projects = () => {
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-12">
           {/* Project 1 */}
-          <div className="animate__animated animate__fadeInDown animate__delay-20000 col-span-12 sm:col-span-4">
+          <div
+            className="col-span-12 sm:col-span-4"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <a href="https://forest-page-pi.vercel.app/" target="_blank">
               <div
                 className={`group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 text-center backdrop-blur-md transition-all duration-700 ${theme === "dark" ? "border-soft-black bg-white/1" : "border-soft-white bg-black/1"}`}
@@ -72,9 +80,15 @@ const Projects = () => {
             </a>
           </div>
           {/* Project 2 */}
-          <div className="animate__animated animate__fadeInUp animate__delay-25000 col-span-12 sm:col-span-4">
+          <div
+            className="col-span-12 sm:col-span-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <a href="https://wedding-ms-psi.vercel.app/" target="_blank">
-              <div className={`group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 text-center backdrop-blur-md transition-all duration-700 ${theme === "dark" ? "border-soft-black bg-white/1" : "border-soft-white bg-black/1"}`}>
+              <div
+                className={`group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 text-center backdrop-blur-md transition-all duration-700 ${theme === "dark" ? "border-soft-black bg-white/1" : "border-soft-white bg-black/1"}`}
+              >
                 <img
                   src={Project_2_img}
                   alt="Site de Casamento"
@@ -108,9 +122,15 @@ const Projects = () => {
             </a>
           </div>
           {/* Project 3 */}
-          <div className="animate__animated animate__fadeInDown animate__delay-30000 col-span-12 sm:col-span-4">
+          <div
+            className="col-span-12 sm:col-span-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <a href="https://portifolio-bikcraft.vercel.app/" target="_blank">
-              <div className={`group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 text-center backdrop-blur-md transition-all duration-700 ${theme === "dark" ? "border-soft-black bg-white/1" : "border-soft-white bg-black/1"}`}>
+              <div
+                className={`group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 text-center backdrop-blur-md transition-all duration-700 ${theme === "dark" ? "border-soft-black bg-white/1" : "border-soft-white bg-black/1"}`}
+              >
                 <img
                   src={Project_3_img}
                   alt="Bikcraft"

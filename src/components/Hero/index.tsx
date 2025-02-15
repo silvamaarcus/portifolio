@@ -18,13 +18,13 @@ const Hero = () => {
   return (
     <>
       <section
-        className={`custom-containe relative flex h-[600px] flex-col items-center justify-center md:min-h-screen ${
+        className={`custom-container relative flex h-[600px] flex-col items-center justify-center md:min-h-screen ${
           theme === "dark" ? "text-soft-white" : "text-background"
         }`}
         id="home"
       >
         <div className="flex h-full flex-col items-center justify-center overflow-hidden">
-          <h1 className="animate__animated animate__backInRight animate__delay-30000s text-center text-3xl font-bold md:text-8xl">
+          <h1 className="animate__animated animate__backInRight text-center text-3xl font-bold md:text-8xl">
             <Trans
               i18nKey="hero.title"
               components={{
@@ -34,10 +34,10 @@ const Hero = () => {
               values={{ name: "Marcus Silva." }}
             />
           </h1>
-          <p className="animate__animated animate__backInLeft animate__delay-10000s my-10 w-[70%] text-center md:text-2xl">
+          <p className="animate__animated animate__backInLeft my-10 w-[70%] text-center md:text-2xl">
             {t("hero.subtitle")}
           </p>
-          <div className="animate__animated animate__backInLeft animate__delay-30000s flex items-center justify-center gap-4 sm:justify-start">
+          <div className="animate__animated animate__backInLeft flex items-center justify-center gap-4 sm:justify-start">
             <Button onClick={downloadResume}>{t("buttons.download")}</Button>
             <a
               href="https://wa.me/5531997003074"

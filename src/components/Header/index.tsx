@@ -10,6 +10,8 @@ import {
 
 import ProfileImg from "/img/profile.png";
 
+import { useThemeSwitcher } from "../../stores/useThemeSwitcher";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,9 +21,15 @@ const Header = () => {
 
   const { t } = useTranslation();
 
+  const theme = useThemeSwitcher((state) => state.theme);
+
   return (
-    <section className="custom-container">
-      <header className="bg-background/10 fixed top-0 right-0 left-0 z-50 flex flex-wrap items-center justify-around gap-4 py-6 backdrop-blur-md">
+    <section
+      className={`custom-container ${theme === "dark" ? "text-soft-white" : "text-soft-black"}`}
+    >
+      <header
+        className={` ${theme === "dark" ? "bg-background/10" : "bg-soft-white/10"} fixed top-0 right-0 left-0 z-50 flex flex-wrap items-center justify-between gap-4 px-4 py-6 backdrop-blur-md md:justify-around md:px-0`}
+      >
         <a href="/" className="hidden items-center gap-4 md:flex">
           <img
             src={ProfileImg}
@@ -34,7 +42,7 @@ const Header = () => {
         <div className="flex items-center md:hidden">
           <button
             onClick={handleClick}
-            className="hover:text-primary cursor-pointer transition-all duration-700"
+            className={`hover:text-primary cursor-pointer transition-all duration-700 ease-in-out`}
           >
             <div className="transition-opacity duration-300">
               {isOpen ? (
@@ -96,7 +104,7 @@ const Header = () => {
         <ul
           className={`${
             isOpen ? "flex" : "hidden"
-          } bg-background/10 fixed top-20 right-0 left-0 z-50 mx-2 flex-col rounded-xl backdrop-blur-md md:hidden`}
+          } bg-background/10 fixed top-20 right-0 left-0 z-50 flex-col backdrop-blur-md md:hidden`}
         >
           <li className="border-background border-b bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
             <a href="/">{t("navigation.home")}</a>
@@ -108,9 +116,7 @@ const Header = () => {
             <a href="#projects">{t("navigation.projects")}</a>
           </li>
           <li className="bg-white/1 p-4 text-xl backdrop-blur-md transition-all duration-500 hover:bg-white/10 hover:pl-6">
-            <a href="#contact">
-              {t("navigation.contact")}
-            </a>
+            <a href="#contact">{t("navigation.contact")}</a>
           </li>
         </ul>
       </nav>

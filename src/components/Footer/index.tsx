@@ -2,20 +2,24 @@ import { GithubFill, LinkedinBoxFill } from "akar-icons";
 
 import { useTranslation } from "react-i18next";
 
+import { useThemeSwitcher } from "../../stores/useThemeSwitcher";
+
 const Footer = () => {
   const { t } = useTranslation();
 
+  const theme = useThemeSwitcher((state) => state.theme);
+
   return (
     <>
-      <section className="custom-container border-soft-black mt-12 border-t-2 pt-32">
+      <section
+        className={`custom-container mt-12 border-t-2 pt-32 ${theme === "dark" ? "text-soft-white border-soft-black" : "text-background border-soft-white"}`}
+      >
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-12">
           <div className="col-span-12 text-center sm:col-span-6 md:text-start">
             <h1 className="mb-9 text-2xl font-bold md:text-start">
               Marcus Silva
             </h1>
-            <p className="text-2xl">
-              {t("footer.info")}
-            </p>
+            <p className="text-2xl">{t("footer.info")}</p>
           </div>
 
           <div className="col-span-12 sm:col-span-6">
@@ -38,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <div className="custom-container border-soft-black border-t-2 py-10">
+      <div className={`custom-container border-soft-black border-t-2 py-10 ${theme === "dark" ? "text-soft-white border-soft-black" : "text-background border-soft-white"}`}>
         <p className="mx-auto w-3/4 text-center">
           {t("footer.copy")}{" "}
           <a

@@ -4,6 +4,8 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 import { Trans, useTranslation } from "react-i18next";
 
+import { useThemeSwitcher } from "../../stores/useThemeSwitcher";
+
 const Hero = () => {
   const downloadResume = () => {
     window.open("/pdf/marcus-silva-cv.pdf", "_blank");
@@ -11,10 +13,14 @@ const Hero = () => {
 
   const { t } = useTranslation();
 
+  const theme = useThemeSwitcher((state) => state.theme);
+
   return (
     <>
       <section
-        className="custom-containe relative flex h-[600px] flex-col items-center justify-center md:min-h-screen"
+        className={`custom-containe relative flex h-[600px] flex-col items-center justify-center md:min-h-screen ${
+          theme === "dark" ? "text-soft-white" : "text-background"
+        }`}
         id="home"
       >
         <div className="flex h-full flex-col items-center justify-center overflow-hidden">
@@ -36,7 +42,7 @@ const Hero = () => {
             <a
               href="https://wa.me/5531997003074"
               target="_blank"
-              className="border-primary flex items-center gap-4 rounded-md border-2 px-4 py-2 text-white hover:opacity-90"
+              className="border-primary flex items-center gap-4 rounded-md border-2 px-4 py-2 hover:opacity-90"
             >
               <WhatsappFill strokeWidth={2} size={20} />
               {t("buttons.contact")}

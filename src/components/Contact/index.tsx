@@ -2,12 +2,19 @@ import Button from "../ui/Button";
 
 import { useTranslation } from "react-i18next";
 
+import { useThemeSwitcher } from "../../stores/useThemeSwitcher";
+
 const Contact = () => {
   const { t } = useTranslation();
 
+  const theme = useThemeSwitcher((state) => state.theme);
+
   return (
     <>
-      <section className="custom-container overflow-hidden pt-32" id="contact">
+      <section
+        className={`custom-container overflow-hidden pt-32 ${theme === "dark" ? "text-soft-white" : "text-background"}`}
+        id="contact"
+      >
         <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
           <div className="relative">
             <h1 className="text-4xl font-bold">{t("sectionContact.title")}</h1>
@@ -17,14 +24,16 @@ const Contact = () => {
             {t("sectionContact.description")}
           </p>
 
-          <form className="bg-soft-black mt-10 flex w-full flex-col gap-4 rounded-md p-10 md:w-3/4">
+          <form
+            className={`mt-10 flex w-full flex-col gap-4 rounded-md p-10 md:w-3/4 ${theme === "dark" ? "bg-soft-black" : "bg-soft-white"}`}
+          >
             <div className="flex flex-col gap-2">
               <label htmlFor="name" className="text-lg">
                 {t("sectionContact.form.name")}
               </label>
               <input
                 type="text"
-                className="bg-background w-full rounded-md border-0 p-2 outline-none"
+                className={`w-full rounded-md border-0 p-2 outline-none ${theme === "dark" ? "bg-background" : "bg-white"}`}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -33,7 +42,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                className="bg-background w-full rounded-md border-0 p-2 outline-none"
+                className={`w-full rounded-md border-0 p-2 outline-none ${theme === "dark" ? "bg-background" : "bg-white"}`}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -43,7 +52,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 rows={5}
-                className="bg-background w-full rounded-md border-0 p-2 outline-none"
+                className={`w-full rounded-md border-0 p-2 outline-none ${theme === "dark" ? "bg-background" : "bg-white"}`}
               ></textarea>
             </div>
             <div className="flex justify-end">

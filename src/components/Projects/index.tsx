@@ -5,15 +5,24 @@ import Project_3_img from "/img/project_3.png";
 
 import { useTranslation } from "react-i18next";
 
+import { useThemeSwitcher } from "../../stores/useThemeSwitcher";
+
 const Projects = () => {
+  const theme = useThemeSwitcher((state) => state.theme);
+
   const { t } = useTranslation();
 
   return (
     <>
-      <section className="custom-container overflow-hidden pt-32" id="projects">
+      <section
+        className={`custom-container overflow-hidden pt-32 ${theme === "dark" ? "text-soft-white" : "text-background"}`}
+        id="projects"
+      >
         <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
           <div className="relative">
-            <h1 className="text-4xl font-bold">
+            <h1
+              className={`text-4xl font-bold ${theme === "dark" ? "text-white" : ""}`}
+            >
               {t("sectionProjects.title")}
             </h1>
             <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>
@@ -27,7 +36,9 @@ const Projects = () => {
           {/* Project 1 */}
           <div className="animate__animated animate__fadeInDown animate__delay-20000 col-span-12 sm:col-span-4">
             <a href="https://forest-page-pi.vercel.app/" target="_blank">
-              <div className="border-soft-black group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
+              <div
+                className={`group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 text-center backdrop-blur-md transition-all duration-700 ${theme === "dark" ? "border-soft-black bg-white/1" : "border-soft-white bg-black/1"}`}
+              >
                 <img
                   src={Project_1_img}
                   alt="Forest"
@@ -63,7 +74,7 @@ const Projects = () => {
           {/* Project 2 */}
           <div className="animate__animated animate__fadeInUp animate__delay-25000 col-span-12 sm:col-span-4">
             <a href="https://wedding-ms-psi.vercel.app/" target="_blank">
-              <div className="border-soft-black group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
+              <div className={`group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 text-center backdrop-blur-md transition-all duration-700 ${theme === "dark" ? "border-soft-black bg-white/1" : "border-soft-white bg-black/1"}`}>
                 <img
                   src={Project_2_img}
                   alt="Site de Casamento"
@@ -99,7 +110,7 @@ const Projects = () => {
           {/* Project 3 */}
           <div className="animate__animated animate__fadeInDown animate__delay-30000 col-span-12 sm:col-span-4">
             <a href="https://portifolio-bikcraft.vercel.app/" target="_blank">
-              <div className="border-soft-black group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 bg-white/1 text-center backdrop-blur-md transition-all duration-700">
+              <div className={`group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-md border-4 text-center backdrop-blur-md transition-all duration-700 ${theme === "dark" ? "border-soft-black bg-white/1" : "border-soft-white bg-black/1"}`}>
                 <img
                   src={Project_3_img}
                   alt="Bikcraft"

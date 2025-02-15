@@ -32,7 +32,9 @@ const About = () => {
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-12">
           <div className="animate__animated animate__fadeInLeft animate__delay-30000 col-span-12 sm:col-span-6">
-            <h1 className="mb-9 text-2xl font-bold md:text-start">
+            <h1
+              className={`mb-9 text-2xl font-bold md:text-start ${theme === "dark" ? "text-white" : ""}`}
+            >
               {t("sectionAbout.aboutMe")}
             </h1>
             <span className="space-y-4 text-xl">
@@ -65,47 +67,13 @@ const About = () => {
               </p>
 
               <p>{t("sectionAbout.info.p_3")}</p>
-
-              {/* <p>
-                Sou um desenvolvedor web focado em front-end, construindo e
-                gerenciando o front-end de sites e aplicativos da web que levam
-                ao sucesso do produto geral. Confira alguns dos meus trabalhos
-                na seção Projetos.
-              </p>
-              <p>
-                Também gosto de compartilhar conteúdo relacionado ao que aprendi
-                ao longo dos anos em desenvolvimento web para que possa ajudar
-                outras pessoas da comunidade de desenvolvedores. Sinta-se à
-                vontade para se conectar ou me seguir no meu{" "}
-                <a
-                  href="https://github.com/silvamaarcus"
-                  target="_blank"
-                  className="text-secondary"
-                >
-                  GitHub
-                </a>{" "}
-                e{" "}
-                <a
-                  href="https://www.linkedin.com/in/silvamaarcus/"
-                  target="_blank"
-                  className="text-secondary"
-                >
-                  Linkedin
-                </a>
-                , onde publico conteúdo útil relacionado ao desenvolvimento e
-                programação da web.
-              </p>
-              <p>
-                Estou aberto a oportunidades de emprego nas quais posso
-                contribuir, aprender e crescer. Se você tiver uma boa
-                oportunidade que corresponda às minhas habilidades e
-                experiência, não hesite em entrar em contato comigo.
-              </p> */}
             </span>
           </div>
 
           <div className="animate__animated animate__fadeInRight animate__delay-30000 col-span-12 sm:col-span-6">
-            <h1 className="mb-9 text-center text-2xl font-bold md:text-start">
+            <h1
+              className={`mb-9 text-2xl font-bold md:text-start ${theme === "dark" ? "text-white" : ""}`}
+            >
               {t("sectionAbout.mySkills")}
             </h1>
             <div className="flex flex-wrap gap-4">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // Component
 import Button from "./Button";
@@ -59,6 +59,17 @@ const FormContact = () => {
       setLoading(false);
     }
   };
+
+  // Resetar o estado após 10 segundos
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        setSuccess(false);
+      }, 10000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [success]);
 
   return (
     <>

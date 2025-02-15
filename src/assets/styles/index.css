@@ -15,17 +15,15 @@
   --color-primary: #a277ff;
   --color-secondary: #61ffca;
   --color-background: #15141b;
+  --color-black-default: #1a1a1a;
   --color-soft-black: #242424;
   --color-soft-white: #d9d9d9;
 
-  --color-gradient-primary: linear-gradient(
-    200deg,
-    #c4a7ff 8%,
-    #a277ff 92%
-  );
+  --color-gradient-primary: linear-gradient(200deg, #c4a7ff 8%, #a277ff 92%);
 
   --font-primary: "Space Grotesk", serif;
 }
+
 
 body {
   width: 100%;
@@ -49,9 +47,8 @@ body::-webkit-scrollbar-thumb {
   @apply hidden sm:block;
 }
 
-p {
-  color: var(--color-soft-white);
-}
+
+
 
 .color-gradient {
   background: var(--color-gradient-primary) !important;

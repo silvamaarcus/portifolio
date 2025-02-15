@@ -2,15 +2,26 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 import { Trans, useTranslation } from "react-i18next";
 
+import { useThemeSwitcher } from "../../stores/useThemeSwitcher";
+
 const About = () => {
+  const theme = useThemeSwitcher((state) => state.theme);
+
   const { t } = useTranslation();
 
   return (
     <>
-      <section className="custom-container overflow-hidden pt-32" id="about">
+      <section
+        className={`custom-container overflow-hidden pt-32 ${theme === "dark" ? "text-soft-white" : "text-background"}`}
+        id="about"
+      >
         <div className="animate__animated animate__fadeInUp animate__delay-30000 flex flex-col items-center justify-center">
           <div className="relative">
-            <h1 className="text-4xl font-bold">{t("sectionAbout.title")}</h1>
+            <h1
+              className={`text-4xl font-bold ${theme === "dark" ? "text-white" : ""}`}
+            >
+              {t("sectionAbout.title")}
+            </h1>
             <span className="bg-primary absolute -bottom-4 left-1/2 h-1 w-8 -translate-x-1/2 transform"></span>
           </div>
 

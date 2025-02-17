@@ -8,7 +8,7 @@ import { useThemeSwitcher } from "../../stores/useThemeSwitcher";
 
 const Hero = () => {
   const downloadResume = () => {
-    window.open("/pdf/marcus-silva-cv.pdf", "_blank");
+    window.open("/pdf/cv-marcus-silva.pdf", "_blank");
   };
 
   const { t } = useTranslation();

@@ -16,7 +16,7 @@ const Contact = () => {
       >
         <div
           className="flex flex-col items-center justify-center"
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="2000"
         >
           <div className="relative">

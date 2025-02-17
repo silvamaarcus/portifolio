@@ -20,9 +20,11 @@
     "aboutMe": "Come meet me",
     "mySkills": "My skills",
     "info": {
-      "p_1": "I am a front-end developer, creating and managing interfaces for websites and web applications that contribute to the overall success of the product. Check out my work in the Projects section.",
-      "p_2": "I also enjoy sharing content related to what I have learned over the years in web development so I can connect with other people in the developer community. Feel free to connect or follow me on my <github>GitHub</github> and <linkedin>LinkedIn</linkedin>.",
-      "p_3": "I am open to job opportunities where I can contribute, learn, and grow. If you have a good opportunity that matches my skills and experience, don't hesitate to reach out to me."
+      "p_1": "I have a degree in Systems Analysis and Development and work as a Frontend Developer, with experience in both corporate environments, collaborating in agile teams (Scrum), and as a freelancer, developing customized solutions for different projects.",
+
+      "p_2": "I have a communicative, proactive, and analytical profile, which allows me to work well in teams and handle challenges calmly and adaptably. I am always looking to improve my skills by exploring new technologies and applying best development practices. Feel free to check out my work on <github>GitHub</github> or connect with me on <linkedin>LinkedIn</linkedin>. My technical skills are detailed in the next section.",
+
+      "p_3": "I am open to job opportunities or projects where I can contribute, learn, and grow. If you have a good opportunity that matches my skills and experience, don’t hesitate to reach out to me."
     }
   },
   "sectionProjects": {

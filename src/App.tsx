@@ -23,7 +23,7 @@ function App() {
   const theme = useThemeSwitcher((state) => state.theme);
 
   return (
-    <section className="relative">
+    <section className="relative overflow-hidden">
       <div>
         <div
           className={`background -z-10 *:-z-20 ${theme === "dark" ? "bg-background" : "bg-soft-white"}`}
